@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.visiabletech.indidmobileapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.RECEIVE_SMS"/> -->
+    <uses-feature
+        android:name="android.hardware.sensor.compass"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.SEND_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_SMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_WAP_PUSH"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.RECEIVE_MMS"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.READ_CALL_LOG"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.WRITE_CALL_LOG"
+        tools:node="remove" />
+    <uses-permission
+        android:name="android.permission.PROCESS_OUTGOING_CALLS"
+        tools:node="remove" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".BenefitsMTSEActivity"></activity>
+        <activity android:name=".MTSEActivity">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity android:name=".SubChapterActivity" />
+        <activity android:name=".StudyChapterActivity" />
+        <activity android:name=".StudyActivity" />
+        <activity android:name=".PaymentHistoryActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".ExecutiveRegisterActivity" />
+        <activity android:name=".ExecutiveVerifyOtpActivity" />
+        <activity android:name=".ExecutiveMobileActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ResultDetailsActivity" />
+        <activity android:name=".EBookActivity">
+            <intent-filter>
+                <action android:name="BOOKACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PlayVideoActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".VideosActivity">
+            <intent-filter>
+                <action android:name="VIDEOACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BenefitsActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".ExamQuestionActivity" />
+        <activity android:name=".ExaminationActivity" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SyllabusActivity" />
+        <activity android:name=".TimeTableActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".BulletinActivity" />
+        <activity android:name=".NoticeActivity">
+            <intent-filter>
+                <action android:name="NOTICEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeWorkActivity" />
+        <activity android:name=".ClassWorkActivity" />
+        <activity android:name=".AssignmentActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginModifyActivity" />
+        <activity android:name=".MobileNumberActivity" />
+        <activity android:name=".VerifyOTPActivity" />
+        <activity android:name=".MainPageActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".IntroPageActivity" />
+        <activity android:name=".VimeoVideoPlayActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".BroadCast.MyBroadCastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".FirebaseMessaging.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+<meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_VFap39n1miU9np" />
+        -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_JSklBe9xCErzEF" />
+    </application>
+
+</manifest>

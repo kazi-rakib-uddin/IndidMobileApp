@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGreen"
+    android:padding="5dp"
+    >
+    <TextView
+        android:fontFamily="@font/cabin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#FFF"
+        android:text="NOTICE header"
+        android:textAlignment="center"
+        android:id="@+id/tv_notice_header"/>
+    <TextView
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:text="NOTICE date"
+        android:id="@+id/tv_notice_date"/>
+    <TextView
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:textColor="#FFF"
+        android:text="NOTICE"
+        android:id="@+id/tv_notice_subject"/>
+
+
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

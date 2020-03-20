@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/md_black_1000"
+        android:fontFamily="@font/cabin_medium"
+        android:padding="@dimen/_3sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_sub_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/md_black_1000"
+        android:fontFamily="@font/cabin_medium"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        />
+
+    <Button
+        android:id="@+id/btn_gotit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Got it"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/colorLoader"
+        android:textColor="@color/md_white_1000"
+        />
+
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        />
+
+
+
+
+</LinearLayout>
+

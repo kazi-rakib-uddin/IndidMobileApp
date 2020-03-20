@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/youtube_thumbnail"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:fontFamily="@font/cabin_medium"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

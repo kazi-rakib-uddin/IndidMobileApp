@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/tv_title_noti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

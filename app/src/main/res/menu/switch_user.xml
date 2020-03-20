@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_switch_user"
+        android:title=""
+        android:icon="@drawable/switch_user"
+        app:showAsAction="always"
+        android:iconTint="@color/colorWhite"
+        android:visible="false"
+        />
+
+
+    <item
+        android:id="@+id/menu_mtse"
+        android:title="MTSE"
+        app:showAsAction="always"
+        android:icon="@drawable/img_mtse"
+        />
+
+    <item
+        android:id="@+id/menu_notification"
+        android:title=""
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="always"
+        android:iconTint="@color/colorWhite"
+        android:actionLayout="@layout/notification_badge"
+        />
+
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title=""
+        android:icon="@drawable/logout_img"
+        app:showAsAction="always"
+        android:iconTint="@color/colorWhite"
+        />
+
+
+</menu>

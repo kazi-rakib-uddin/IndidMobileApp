@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FC3F7</color>
+    <color name="colorPrimaryDark">#29B6F6</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorGreen">#4A9960</color>
+    <color name="colorLoader">#074f8f</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed">#FF0303</color>
+    <color name="color1">#005073</color>
+    <color name="color2">#107DAC</color>
+    <color name="color3">#189AD3</color>
+
+
+
+
+    <color name="colorA">#e7e087</color>
+    <color name="colorB">#f88368</color>
+    <color name="colorC">#fe68ca</color>
+    <color name="colorD">#ff9a6f</color>
+    <color name="colorE">#56acf9</color>
+    <color name="colorF">#e7beff</color>
+    <color name="colorG">#7ffcd2</color>
+    <color name="colorH">#c55050</color>
+    <color name="colorI">#f47c7c</color>
+    <color name="colorJ">#4d8ab6</color>
+    <color name="colorK">#a4fbef</color>
+    <color name="colorL">#da4545</color>
+    <color name="colorM">#ffbe5e</color>
+    <color name="colorN">#e174aa</color>
+    <color name="colorO">#f3ca6b</color>
+    <color name="colorP">#16bfbf</color>
+    <color name="colorQ">#dabeff</color>
+    <color name="colorR">#73b092</color>
+    <color name="colorS">#b6da98</color>
+    <color name="colorT">#e58966</color>
+    <color name="colorU">#e8bc75</color>
+    <color name="colorV">#fbec78</color>
+    <color name="colorW">#df7979</color>
+    <color name="colorX">#c171fa</color>
+    <color name="colorY">#faa972</color>
+    <color name="colorZ">#8ffeca</color>
+
+
+
+    <color name="colorAbsent">#FF0000</color>
+    <color name="colorHoliday">#564dca</color>
+    <color name="colorLeave">#e79e24</color>
+    <color name="colorBlack">#333333</color>
+    <color name="colorPresent">#008000</color>
+
+
+
+    <color name="colorProfile">#fd0864</color>
+    <color name="colorAttendance">#8bd53f</color>
+    <color name="colorTimeTable">#ff7200</color>
+    <color name="colorNotice">#3ec8ca</color>
+    <color name="colorBulletins">#68bc97</color>
+    <color name="colorSyllabus">#e288fc</color>
+    <color name="colorAccount">#9900cc</color>
+    <color name="colorCommunication">#f53ef7</color>
+    <color name="colorTransportation">#e5b700</color>
+    <color name="colorLibrary">#a7f285</color>
+    <color name="colorResult">#ff2f2f</color>
+    <color name="colorExamination">#ff6363</color>
+    <color name="colorAssignment">#4a03ff</color>
+    <color name="colorGallery">#0277BD</color>
+    <color name="colorClassWork">#01925d</color>
+    <color name="colorHomeWork">#4C5DBB</color>
+    <color name="colorDiamondWhite">#e9f1f9</color>
+
+
+    <color name="colorIndidLogo">#00afef</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="appColor">#009688</color>
+    <color name="colorNoticeBorder">#ffffff</color>
+
+    <color name="md_black_1000">#000000</color>
+    <color name="md_white_1000">#ffffff</color>
+
+    <color name="color400">#81D4FA</color>
+    <color name="color500">#4FC3F7</color>
+    <color name="color600">#29B6F6</color>
+
+
+    <color name="cardColor">#ffffff</color>
+    <color name="textcardColor">#3f3f3f</color>
+    
+    <color name="transparent">#E7E4E4</color>
+    <color name="edtiTextBG">#E2DEDE</color>
+
+    <color name="colorGray300">#90A4AE</color>
+
+    <color name="colorText">#488DCF</color>
+    <color name="colorGray">#B3B3B3</color>
+
+    <color name="materialRed">#ffe2a9</color>
+    <color name="materialLime">#16D590</color>
+    <color name="materialPurple">#A00DCA</color>
+    <color name="materialOrange">#F59D67</color>
+
+    <color name="skyColor">#FFFFFF</color>
+    <color name="sky">#D6FFFF</color>
+
+</resources>

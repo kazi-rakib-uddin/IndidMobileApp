@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--<com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/youtube_thumbnail"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"/>-->
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <com.ct7ct7ct7.androidvimeoplayer.view.VimeoPlayerView
+                    android:id="@+id/vimeoPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:autoPlay="false"
+                    app:loop="false"
+                    app:muted="false"
+                    app:showFullscreenOption="false"
+                    app:showMenuOption="false"
+                    app:showOriginalControls="false"
+                    app:showTitle="true"
+                    app:topicColor="#FFFF00"
+                    app:aspectRatio="1.778"
+                    />
+            </LinearLayout>
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:textColor="@color/colorBlack"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_arrow" />
+
+
+</RelativeLayout>

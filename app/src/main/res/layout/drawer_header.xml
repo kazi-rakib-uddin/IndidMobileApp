@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp"
+    android:background="@drawable/drawer_baner">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile_drawer"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_name_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/cabin_medium"
+        android:textColor="@color/md_white_1000"
+        android:textSize="@dimen/_17sdp" />
+
+
+
+    <TextView
+        android:id="@+id/tv_mobile_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/md_white_1000"
+        android:fontFamily="@font/cabin_medium"/>
+
+
+
+</LinearLayout>

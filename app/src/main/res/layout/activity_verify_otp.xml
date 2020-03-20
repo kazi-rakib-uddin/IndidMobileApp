@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:touchscreenBlocksFocus="true"
+    tools:context=".VerifyOTPActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP sent to"
+            android:layout_marginTop="30dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#242424"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7602986498"
+                android:textSize="20sp"
+                android:textColor="#242424"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_edit_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:textSize="15sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_round_bg"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+       <!-- <com.mukesh.OtpView
+            android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            app:viewType="line"
+            android:layout_gravity="center"
+            android:importantForAutofill="no"
+            android:visibility="visible"
+            />-->
+
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pin_view_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="4"
+            app:cursorVisible="false"
+            app:forceKeyboard="false"
+            app:hint="0"
+            app:inputType="number"
+            android:visibility="visible"
+            />
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv_resend_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorGray300"
+            android:enabled="false"
+            />
+
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1:00"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/av_loader"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        app:indicatorColor="@color/colorLoader"
+        app:indicatorName="BallSpinFadeLoaderIndicator"
+        />
+
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify and proceed"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_round_bg"
+        android:textColor="#FFFFFF"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+
+</RelativeLayout>

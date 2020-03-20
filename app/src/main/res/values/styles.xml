@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="colorControlActivated">@color/color500</item>
+        <item name="colorControlNormal">@color/color500</item>
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+
+
+
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/cabin_medium</item>
+    </style>
+
+
+    <style name="TextAppearance.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@color/color500</item>
+    </style>
+
+</resources>

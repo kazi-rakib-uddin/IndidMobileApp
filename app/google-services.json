@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "691883623630",
+    "firebase_url": "https://pushnotification-f3952.firebaseio.com",
+    "project_id": "pushnotification-f3952",
+    "storage_bucket": "pushnotification-f3952.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691883623630:android:7851ddfd8aab715372fc9f",
+        "android_client_info": {
+          "package_name": "com.visiabletech.indidmobileapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691883623630-pqeh816u3337pcelqlhlrtvsqt3b1eu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTIzqHjgh_tCAc3iELvhFy8mlV_sjZXeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691883623630-pqeh816u3337pcelqlhlrtvsqt3b1eu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

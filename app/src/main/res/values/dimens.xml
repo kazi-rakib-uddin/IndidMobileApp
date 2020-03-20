@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_26dp">26dp</dimen>
+    <dimen name="spacing_10">10dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="spacing_60dp">60dp</dimen>
+    <dimen name="spacing_80dp">80dp</dimen>
+    <dimen name="spacing_230dp">230dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="spacing_30dp">30dp</dimen>
+    <dimen name="spacing_50dp">50dp</dimen>
+    <dimen name="spacing_5dp">5dp</dimen>
+    <dimen name="spacing_40dp">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="spacing_15dp">15dp</dimen>
+    <dimen name="activity_horizontal_margin">18dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">120dp</dimen>
+    <dimen name="app_text_size_large">16.0sp</dimen>
+    <dimen name="app_text_size_xxxlarge">24.0sp</dimen>
+    <dimen name="spacing_22dp">22dp</dimen>
+    <dimen name="spacing_7dp">7dp</dimen>
+</resources>

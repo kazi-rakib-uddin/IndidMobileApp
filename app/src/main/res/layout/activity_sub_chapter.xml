@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubChapterActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_marginTop="@dimen/spacing_40dp"
+        android:background="@drawable/bottom_oval"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_study_img"
+            android:layout_width="@dimen/spacing_60dp"
+            android:layout_height="@dimen/spacing_60dp"
+            android:src="@drawable/ic_result" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_10"
+            android:text="Name"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_top"
+        android:background="@color/md_white_1000"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_sub_chapter">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_20sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/concept_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@color/md_white_1000"
+                    app:cardCornerRadius="@dimen/spacing_5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/md_white_1000"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="@dimen/padding_5"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorBulletins" />
+
+                        <ImageView
+                            android:id="@+id/iv_subject_icon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/margin_10"
+                            android:padding="2dp"
+                            android:src="@drawable/ic_exam" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/iv_subject_icon"
+                            android:layout_toRightOf="@+id/iv_subject_icon"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingEnd="0dp"
+                            android:paddingRight="0dp">
+
+                            <TextView
+                                android:id="@+id/textView_Subject"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="Exam"
+                                android:textColor="@color/colorBulletins"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView_Concept_count"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="17dp"
+                                android:layout_marginRight="17dp"
+                                android:text=""
+                                android:textColor="@color/colorBulletins"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/video_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/concept_cardView"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@color/md_white_1000"
+                    app:cardCornerRadius="@dimen/spacing_5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/md_white_1000"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorExamination" />
+
+                        <ImageView
+                            android:id="@+id/iv_video_icon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/margin_10"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_video_lecture" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/iv_video_icon"
+                            android:layout_toRightOf="@+id/iv_video_icon"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingEnd="0dp"
+                            android:paddingRight="0dp">
+
+                            <TextView
+                                android:id="@+id/textView_video"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="Video Lectures"
+                                android:textColor="@color/colorExamination"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView_Video_count"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="17dp"
+                                android:layout_marginRight="17dp"
+                                android:text=""
+                                android:textColor="@color/colorExamination"
+                                android:textSize="16sp" />
+
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/quiz_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/video_cardView"
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="@color/md_white_1000"
+                    app:cardCornerRadius="@dimen/spacing_5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/md_white_1000"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorSyllabus" />
+
+                        <ImageView
+                            android:id="@+id/iv_quiz_icon"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/margin_10"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_ebook" />
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/iv_quiz_icon"
+                            android:layout_toRightOf="@+id/iv_quiz_icon"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingEnd="0dp"
+                            android:paddingRight="0dp">
+
+                            <TextView
+                                android:id="@+id/textView_Quiz"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:text="E-Book"
+                                android:textColor="@color/colorSyllabus"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/textView_Quiz_count"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="17dp"
+                                android:layout_marginRight="17dp"
+                                android:text=""
+                                android:textColor="@color/colorSyllabus"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+</RelativeLayout>
