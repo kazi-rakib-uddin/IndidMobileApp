@@ -18,6 +18,7 @@
 
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/cabin_medium</item>
+        <item name="actionMenuTextColor">#941818</item>
     </style>
 
 

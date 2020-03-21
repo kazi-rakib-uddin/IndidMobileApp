@@ -17,48 +17,7 @@
     android:background="@color/colorWhite"
     >
 
-    <!--<include layout="@layout/toolbar_layout"/>-->
-
-
-    <androidx.appcompat.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:background="@drawable/toolbar_background"
-        android:elevation="4dp"
-        android:theme="@style/ToolbarTheme"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-
-        <LinearLayout
-            android:id="@+id/vg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:orientation="horizontal">
-
-            <com.mursaat.extendedtextview.AnimatedGradientTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MTSE"
-                android:layout_marginLeft="50dp"
-                app:simultaneousColors="5"
-                android:textStyle="bold"
-                app:angle="45"
-                app:speed="1000"
-                app:maxFPS="30"
-                app:colors="@array/rainbow2"
-
-
-                />
-
-        </LinearLayout>
-
-    </androidx.appcompat.widget.Toolbar>
-
-
+    <include layout="@layout/toolbar_layout"/>
 
 
     <ScrollView

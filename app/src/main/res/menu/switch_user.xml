@@ -16,7 +16,6 @@
         android:id="@+id/menu_mtse"
         android:title="MTSE"
         app:showAsAction="always"
-        android:visible="false"
         />
 
     <item
