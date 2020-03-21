@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
+
         <item name="colorControlActivated">@color/color500</item>
         <item name="colorControlNormal">@color/color500</item>
         <item name="otpViewStyle">@style/OtpWidget.OtpView</item>

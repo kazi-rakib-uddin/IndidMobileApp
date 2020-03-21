@@ -10,4 +10,15 @@
 
     </array>
 
+
+    <array name="rainbow2">
+
+        <item>@color/md_white_1000</item>
+        <item>@color/md_white_1000</item>
+        <item>@color/md_white_1000</item>
+        <item>@color/md_white_1000</item>
+        <item>#FFFFFF</item>
+
+    </array>
+
 </resources>

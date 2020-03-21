@@ -4,10 +4,10 @@
         <shape android:shape="oval">
             <solid android:color="#FFFFFF"/>
             <size
-                android:width="100dp"
-                android:height="100dp" />
+                android:width="30dp"
+                android:height="30dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/attendance_img" />
+    <!--<item android:drawable="@drawable/attendance_img" />-->
 
 </layer-list>
